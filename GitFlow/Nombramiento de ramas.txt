@@ -1,0 +1,11 @@
+Nombramiento de ramas de GitFlow
+
+feature/{something}
+
+develop PROTEGIDO
+
+release/{major.minor.bugfix
+
+hotfix/{something}
+
+main PROTEGIDO
