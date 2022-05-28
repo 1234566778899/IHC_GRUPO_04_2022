@@ -1,0 +1,23 @@
+Aplicación de GitFlow
+
+Implementareamos el modelo de flujo GitFlow, la cual usaremos
+con el objetivo de organizar y estructurar la construcción del 
+Landing Page en GitHub por medio de sus diversas ramas que la
+conforman:
+
+Master
+Es la rama por defecto y se usara para las distintas versiones de las publicación del proyecto
+
+Hotfix
+Se usara para las correcciones en "caliente", es decir cuando el software ya haya
+pasado por todo el proceso de producción. 
+
+Realese
+Se usara para la inclusión de retoques o implementaciones hasta ese momento 
+para la nueva versión en el master. 
+
+Develop
+En esta sección se desarrollara las funciones dadas por los features.
+
+Features
+Se usara para implementar o corregir funcionalidades del Landing Page.
