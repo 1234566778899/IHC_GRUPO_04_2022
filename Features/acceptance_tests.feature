@@ -3,9 +3,9 @@
 //Landing Page
 
 Feature: Contactar con la empresa
-	Scenario: Se dirige al formulario
+	Scenario: Se dirige al formulario;
 		GIVEN Que el usuario está en el landing page
-		WHEN Se selecciona la opción [Contacto]
+		WHEN Se selecciona la opción <Contacto>
 		THEN Se muestra un <formulario> con los datos a solicitar 
 	Scenario: Se completa el formulario
 		GIVEN Que el usuario está en el landing page
