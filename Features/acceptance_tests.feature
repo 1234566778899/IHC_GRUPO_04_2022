@@ -1,54 +1,54 @@
-ACCEPTANCE TESTS
+//ACCEPTANCE TESTS
 
 //Landing Page
 
-FEATURE: Contactar con la empresa
-	SCENARIO: Se dirige al formulario
+Feature: Contactar con la empresa
+	Scenario: Se dirige al formulario
 		GIVEN Que el usuario está en el landing page
 		WHEN Se selecciona la opción <Contacto>
 		THEN Se muestra un <formulario> con los datos a solicitar 
-	SCENARIO: Se completa el formulario
+	Scenario: Se completa el formulario
 		GIVEN Que el usuario está en el landing page
 			AND se encuentra la sección de contacto
 		WHEN Se completen todas los <datos solicitados> en formulario
 			AND Se selecciona la opción <Enviar Mensaje>
 		THEN Se envía la información al sistema.
-	SCENARIO Mediante otra forma de contacto
+	Scenario: Mediante otra forma de contacto
 		GIVEN Que el usuario está en el landing page
 		WHEN Se realiza el <scroll> hasta el flooter
 		THEN Se muestra una sección con <los números telefónicos>
 			AND <los correos> de contacto
 
-FEATURE: Conocer de qué trata la aplicación
-	SCENARIO: Mediante click
+Feature: Conocer de qué trata la aplicación
+	Scenario: Mediante click
 		GIVEN Que el usuario está en el landing page
 		WHEN Se selecciona <la opción ¿Qué es MiDoc Virtual?>
 		THEN Se muestra la <infomarción de la app> con los beneficios de la app 
 			AND <las opciones> para descargar por Google Play y App Store.
-	SCENARIO: Mediante scroll
+	Scenario: Mediante scroll
 		GIVEN Que el usuario está en el landing page
 		WHEN Se realice el <scroll> hasta la sección <¿Qué es MiDoc Virtual?>
 		THEN Se muestra la <infomarción de la app> con los beneficios de la app 
 			AND <las opciones> para descargar por Google Play y App Store.
 
-FEATURE: Ver beneficios de la app
-	SCENARIO: Mediante click
+Feature: Ver beneficios de la app
+	Scenario: Mediante click
 		GIVEN Que el usuario está en el landing page
 		WHEN Se selecciona <la opción beneficios>
 		THEN Se muestran los <cards> con los beneficios de la app
-	SCENARIO: Mediante scroll
+	Scenario: Mediante scroll
 		GIVEN Que el usuario está en el landing page
 		WHEN Se realicé el <scroll> hasta la sección de beneficios
 		THEN Se muestran los <cards> con los beneficios de la app
 
-FEATURE: Conocer cómo se usa la app
-	SCENARIO: Mediante scroll 
+Feature: Conocer cómo se usa la app
+	Scenario: Mediante scroll 
 		GIVEN Que el usuario está en el landing page
 		WHEN Se realiza el <scroll> hasta la sección "¿Cómo se usa?"
 		THEN Se muestran los <cards> con las principales instrucciones de la app
 
-FEATURE Ver redes sociales de la app
-	SCENARIO: Mediante scroll
+Feature: Ver redes sociales de la app
+	Scenario: Mediante scroll
 		GIVEN Que el usuario está en el landing page
 		WHEN Se realiza el <scroll> hasta el flooter
 		THEN Se muestra una sección con <las redes sociales de la app>
