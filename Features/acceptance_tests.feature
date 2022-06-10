@@ -1,4 +1,4 @@
-//ACCEPTANCE TESTS
+--ACCEPTANCE TESTS
 
 //Landing Page
 
@@ -56,8 +56,8 @@ Feature: Ver redes sociales de la app
 //Aplicativo
 
 --Usuarios
-FEATURE: Realizar una reserva de medicamento
-	SCENARIO: Se realiza la reserva correctamente
+Feature: Realizar una reserva de medicamento
+	Scenario: Se realiza la reserva correctamente
 		GIVEN: Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Búsqueda>
 			AND Se realiza una <Búsqueda>
@@ -66,7 +66,7 @@ FEATURE: Realizar una reserva de medicamento
 			AND Se selecciona la opción <Reservar>
 			AND Se realiza la reserva en el sistema
 		THEN Se muestra un <mensaje de reserva realizada>
-	SCENARIO: No se realiza la reserva
+	Scenario: No se realiza la reserva
 		GIVEN: Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Búsqueda>
 			AND Se realiza una <Búsqueda>
@@ -75,15 +75,15 @@ FEATURE: Realizar una reserva de medicamento
 			AND Se selecciona la opción <Reservar>
 			AND No se realiza la reserva en el sistema
 		THEN Se muestra un <mensaje error>
-	SCENARIO: No existen resultados
+	Scenario: No existen resultados
 		GIVEN: Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Búsqueda>
 			AND Se realiza una <Búsqueda>
 			AND No existe resultado para la búsqueda
 		THEN Se muestra un <mensaje de no existen resultados>
 
-FEATURE: Cancelar una reserva
-	SCENARIO: Se cancela la reserva correctamente
+Feature: Cancelar una reserva
+	Scenario: Se cancela la reserva correctamente
 		GIVEN Se ha iniciado la sesión correctamente
 		WHEN Se selecciona la opción <Ver mi historial>
 			AND Existen reservas realizadas
@@ -91,7 +91,7 @@ FEATURE: Cancelar una reserva
 			AND Se selecciona la opción <Cancelar reserva>
 			AND Se cancela la reserva en el sistema
 		THEN Se muestra <un mensaje de reserva cancelada>
-	SCENARIO: No se cancela la reserva correctamente
+	Scenario: No se cancela la reserva correctamente
 		GIVEN Se ha iniciado la sesión correctamente
 		WHEN Se selecciona la opción <Ver mi historial>
 			AND Existen reservas realizadas
@@ -99,14 +99,14 @@ FEATURE: Cancelar una reserva
 			AND Se selecciona la opción <Cancelar reserva>
 			AND No se cancela la reserva en el sistema
 		THEN Se muestra <un mensaje de error>
-	SCENARIO: No se cancela la reserva correctamente
+	Scenario: No se cancela la reserva correctamente
 		GIVEN Se ha iniciado la sesión correctamente
 		WHEN Se selecciona la opción <Ver mi historial>
 			AND No existen reservas realizadas
 		THEN Se muestra <un mensaje de no existen información>
 
-FEATURE: Consultar los componentes de un medicamento
-	SCENARIO: Se encuentran resultados
+Feature: Consultar los componentes de un medicamento
+	Scenario: Se encuentran resultados
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <ChatBot>
 			AND Se selecciona la opción <Componentes de un medicmaento>
@@ -114,7 +114,7 @@ FEATURE: Consultar los componentes de un medicamento
 			AND Se encuentran  resultados
 		THEN Se muestra <una fotografía del medicamento>
 			AND <una lista de los componentes del medicamento>
-	SCENARIO: No se encuentran resultados
+	Scenario: No se encuentran resultados
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <ChatBot>
 			AND Se selecciona la opción <Componentes de un medicmaento>
@@ -122,8 +122,8 @@ FEATURE: Consultar los componentes de un medicamento
 			AND No se encuentran  resultados
 		THEN Se muestra <un mensaje de error>
 
-FEATURE: Buscar medicamentos similares
-	SCENARIO: Se encuentran resultados
+Feature: Buscar medicamentos similares
+	Scenario: Se encuentran resultados
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <ChatBot>
 			AND Se selecciona la opción <Medicamentos similares>
@@ -131,7 +131,7 @@ FEATURE: Buscar medicamentos similares
 			AND Se encuentran resultados
 		THEN Se muestran <imágenes> 
 			AND <información> de los medicamentos encontrados 
-	SCENARIO: No se encuentran resultados
+	Scenario: No se encuentran resultados
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <ChatBot>
 			AND Se selecciona la opción <Medicamentos similares>
@@ -139,8 +139,8 @@ FEATURE: Buscar medicamentos similares
 			AND No se encuentran resultados
 		THEN Se muestra <un mensaje de error>
 
-FEATURE: Buscar medicamentos por síntomas
-	SCENARIO: Se encuentran resultados
+Feature: Buscar medicamentos por síntomas
+	Scenario: Se encuentran resultados
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <ChatBot>
 			AND Se selecciona la opción <Consulta por síntomas>
@@ -148,7 +148,7 @@ FEATURE: Buscar medicamentos por síntomas
 			AND Se encuentran resultados
 		THEN Se muestra <el medicamento recomendado>
 			AND <la información del establecimiento> donde lo venden
-	SCENARIO: No se encuentran resultados
+	Scenario: No se encuentran resultados
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <ChatBot>
 			AND Se selecciona la opción <Consulta por síntomas>
@@ -157,40 +157,40 @@ FEATURE: Buscar medicamentos por síntomas
 		THEN Se muestra un <mensaje de no se encontraron resultados> 
 
 --Boticas
-FEATURE: Ver clientes frecuentes
-	SCENARIO: Existe información
+Feature: Ver clientes frecuentes
+	Scenario: Existe información
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Clientes frecuentes>
 			AND Existe información para mostrar
 		THEN Se muestra una <lista de los clientes que más compras realizaron>
-	SCENARIO No existe informacion
+	Scenario: No existe informacion
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Clientes frecuentes>
 			AND No existe información para mostrar
 		THEN Se muestra un <mensaje de error>
 
-FEATURE: Ver ingresos semanales
-	SCENARIO: Existe información
+Feature: Ver ingresos semanales
+	Scenario: Existe información
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Mis Ingresos>
 			AND Existe información para mostrar
 		THEN Se muestra un <gráfico estadístico> con los ingresos de la semana			
 			AND se muestra una <lista> con información de los ingresos
-	SCENARIO: No existe información
+	Scenario: No existe información
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Mis ingresos>
 			AND No existe información para mostrar
 		THEN Se muestra un <mensaje de error>
 
-FEATURE: Editar inventario
-	SCENARIO: Se actualiza el inventario correctamente
+Feature: Editar inventario
+	Scenario: Se actualiza el inventario correctamente
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Actualizar inventario>
 			AND Se selecciona la opción <Modificar> o <Eliminar> o <Añadir>
 			AND Se ingresan los <datos solicitados>
 			AND Se guardan los cambios coreectamente
 		THEN Se muestra un <mensaje de éxito>	
-	SCENARIO: No se actualiza el inventario correctamente
+	Scenario: No se actualiza el inventario correctamente
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Actualizar inventario>
 			AND Se selecciona la opción <Modificar> o <Eliminar> o <Añadir>
@@ -198,7 +198,7 @@ FEATURE: Editar inventario
 			AND No se guardan los cambios
 		THEN Se muestra un <mensaje de error>
 	
-FEATURE: Editar información
+Feature: Editar información
 	Scenario: Se guarda la información correctamente
 		GIVEN Se ha iniciado sesión correctamente
 		WHEN Se selecciona la opción <Editar mi información>
