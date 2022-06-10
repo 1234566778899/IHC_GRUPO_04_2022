@@ -44,7 +44,7 @@ FEATURE: Ver beneficios de la app
 FEATURE: Conocer cómo se usa la app
 	SCENARIO: Mediante scroll 
 		GIVEN Que el usuario está en el landing page
-		WHEN Se realiza el <scroll> hasta la sección "¿Cómo se usa?
+		WHEN Se realiza el <scroll> hasta la sección "¿Cómo se usa?"
 		THEN Se muestran los <cards> con las principales instrucciones de la app
 
 FEATURE Ver redes sociales de la app
